@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fbg">
+    <EditText
+        android:id="@+id/tea_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入职工号"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/tea_pwd"
+        android:layout_width="match_parent"
+        android:hint="请输入密码"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/tea_num" />
+
+    <Button
+        android:id="@+id/sigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tea_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:onClick="login"
+        android:text="登陆" />
+
+
+
+</RelativeLayout>
